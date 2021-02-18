@@ -11,7 +11,7 @@ read filename
 echo -n "Digite a Palavra chave que quer encontrar: "
 read keyword
 
-if [-d "$filename" ]; then
+if [-d "$filename" ] then
         echo "Arquivos encontrados: $(find "$filename" -type f | grep "$keyword" wc -l)"
         echo "Pastas Ecnontradas : $(find "$filename" -type d | grep "$keyword" wc -l )"
 else
